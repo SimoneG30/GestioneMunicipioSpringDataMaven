@@ -37,15 +37,16 @@ public class Utente {
 	private Set<Ruolo> ruoli = new HashSet<>(0);
 
 	public Utente() {
+
 	}
 
-	public Utente(String nome, String cognome, String username, String password, Date dataRegistrazione) {
+	public Utente(String nome, String cognome, String username, String password) {
 		super();
 		this.nome = nome;
 		this.cognome = cognome;
 		this.username = username;
 		this.password = password;
-		this.dataRegistrazione = dataRegistrazione;
+		this.dataRegistrazione = new Date();
 	}
 
 	public Long getId() {

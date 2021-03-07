@@ -20,4 +20,13 @@ public interface UtenteService {
 	
 	public Utente eseguiAccesso(String username, String password);
 
+	public List<Utente> findByNome(String nameInput);
+	
+	public List<Utente> cercaUtentiPerNomeAndCognome(String nomeInput, String cognomeInput);
+
+	public List<Utente> cercaPerUsernameCheIniziaCon(String usernameInput);
+
+	public List<Utente> cercaPerUsernameAndPassword(String usernameInput, String passwordInput);
+
+
 }
