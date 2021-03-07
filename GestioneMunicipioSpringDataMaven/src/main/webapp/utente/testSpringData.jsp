@@ -29,27 +29,30 @@
 		</form>
 		
 		
-		<%-- CERCA PER ETA MAGGIORE DI -  FINDBYETAGREATERTHAN --%>
-		<form class="form-inline" action="ExecuteTestSpringDataUtenteServlet" method="post">
-			<div class="form-group mx-sm-3 mb-2">
-				<input
-					type="text" class="form-control" id="queryInput2" name="queryInput"
-					placeholder="findByNomeAndCognome">
-			</div>
-			<input type="hidden" name="codop" value="findByNomeAndCognome">
-			<button type="submit" class="btn btn-primary mb-2">Esegui Test!!!</button>
-		</form>
-		
-		
-		<%-- CERCA PER NOME ED ETA FINDBYNOMEANDETA --%>
+		<%-- CERCA PER NOME E COGNOME -  findByNomeAndCognome --%>
 		<form class="form-inline" action="ExecuteTestSpringDataUtenteServlet" method="post">
 			<div class="form-group mx-sm-3 mb-2">
 				<input
 					type="text" class="form-control" id="queryInput3" name="queryInput"
 					placeholder="nome">
 				<input
+					type="text" class="form-control" id="queryInput4" name="queryInputCognome"
+					placeholder="cognome">
+			</div>
+			<input type="hidden" name="codop" value="findByNomeAndCognome">
+			<button type="submit" class="btn btn-primary mb-2">Esegui Test!!!</button>
+		</form>
+		
+		
+		<%-- CERCA PER USERNAME E PASSWORD findByUsernameAndPassword --%>
+		<form class="form-inline" action="ExecuteTestSpringDataUtenteServlet" method="post">
+			<div class="form-group mx-sm-3 mb-2">
+				<input
+					type="text" class="form-control" id="queryInput3" name="queryInput"
+					placeholder="username">
+				<input
 					type="text" class="form-control" id="queryInput4" name="queryInputPassword"
-					placeholder="eta">
+					placeholder="password">
 			</div>
 			<input type="hidden" name="codop" value="findByUsernameAndPassword">
 			<button type="submit" class="btn btn-primary mb-2">Esegui Test!!!</button>
@@ -57,31 +60,18 @@
 		
 	
 		
-		<%-- CERCA  PER NOME CHE INIZIA CON - FINDBYNOMESTARTSWITH --%>
+		<%-- CERCA  PER USERNAME CHE INIZIA CON - FINDBYUSERNAME --%>
 		<form class="form-inline" action="ExecuteTestSpringDataUtenteServlet" method="post">
 			<div class="form-group mx-sm-3 mb-2">
 				<input
 					type="text" class="form-control" id="queryInput6" name="queryInput"
-					placeholder="nome">
+					placeholder="username">
 			</div>
-			<input type="hidden" name="codop" value="findByUsernameStartsWith">
+			<input type="hidden" name="codop" value="findByUsername">
 			<button type="submit" class="btn btn-primary mb-2">Esegui Test!!!</button>
 		</form>
-		
-		<%-- CERCA  PER NOME MA EAGER --%>
-		<form class="form-inline" action="ExecuteTestSpringDataUtenteServlet" method="post">
-			<div class="form-group mx-sm-3 mb-2">
-				<input
-					type="text" class="form-control" id="queryInput7" name="queryInput"
-					placeholder="findByCognomeEager">
-			</div>
-			<input type="hidden" name="codop" value="findByCognomeEager">
-			<button type="submit" class="btn btn-primary mb-2">Esegui Test!!!</button>
-		</form>
-		
-		
-		
 
+	
 	</div>
 	<!-- /.container -->
 
